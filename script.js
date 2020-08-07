@@ -28,7 +28,7 @@ function generatePassword() {
         if (options.special) { //if user wants special characters, will add a special character in password, then move to next. otherwise will skip
             password += getRandomValue(special); //adds special characters, uses the function defined below to randomize which one is selected in string
         }
-        if (options.numeric) { //if user wants numbers, will add a number in password, then move to next. otherwise will skip
+        if (options.numbers) { //if user wants numbers, will add a number in password, then move to next. otherwise will skip
             password += getRandomValue(numbers); //adds numbers, uses the function defined below to randomize which one is selected in string
         }
         if (options.uppercase) { //if user wants uppercase letters, will add an uppercase letter in password, then move to next. otherwise will skip
